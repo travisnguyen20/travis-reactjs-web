@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: ${props => props.theme.colors.background} !important;
   }
 
   #root {

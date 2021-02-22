@@ -4,6 +4,7 @@ const theme: DefaultTheme = {
   colors: {
     primaryBlue: '#000852',
     white: '#ffffff',
+    background: '#F5F6F8',
   },
   fontSizes: {
     small: '0.86rem',

@@ -22,6 +22,7 @@ import { useTranslation } from 'react-i18next';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import theme from '../styles/theme';
+import { Header } from './components/Header';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -37,7 +38,8 @@ export function App() {
         </Helmet>
 
         <LeftMenuBar />
-        <PageContent className="min-vh-100">
+        <PageContent>
+          <Header />
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/users" component={UserPage} />
@@ -52,4 +54,5 @@ export function App() {
 
 const PageContent = styled.div`
   margin-left: 300px;
+  padding-top: 80px;
 `;
