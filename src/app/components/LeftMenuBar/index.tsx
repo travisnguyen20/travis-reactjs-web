@@ -28,8 +28,8 @@ export function LeftMenuBar(props: Props) {
         <img src={logo} alt="logo" className="w-50" />
       </div>
       <div className="d-flex flex-column p-5">
-        {menuItems.map(menuItem => (
-          <MenuItem title={menuItem.title} to={menuItem.to} />
+        {menuItems.map((menuItem, index) => (
+          <MenuItem key={index} title={menuItem.title} to={menuItem.to} />
         ))}
       </div>
     </Div>

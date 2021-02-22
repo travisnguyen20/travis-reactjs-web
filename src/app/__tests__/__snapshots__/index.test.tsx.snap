@@ -5,6 +5,7 @@ exports[`<App /> should render and match the snapshot 1`] = `
   theme={
     Object {
       "colors": Object {
+        "background": "#F5F6F8",
         "primaryBlue": "#000852",
         "white": "#ffffff",
       },
@@ -55,9 +56,8 @@ exports[`<App /> should render and match the snapshot 1`] = `
       />
     </Helmet>
     <LeftMenuBar />
-    <app__PageContent
-      className="min-vh-100"
-    >
+    <app__PageContent>
+      <Header />
       <Switch>
         <Route
           component={[Function]}

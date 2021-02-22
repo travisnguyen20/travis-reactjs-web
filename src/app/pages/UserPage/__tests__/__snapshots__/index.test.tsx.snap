@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserPage  /> should match snapshot 1`] = `
+.c0 {
+  font-size: 3rem;
+}
+
+<div
+  class=""
+>
+  <div
+    class="c0"
+  >
+    <h1>
+      Users
+    </h1>
+  </div>
+</div>
+`;

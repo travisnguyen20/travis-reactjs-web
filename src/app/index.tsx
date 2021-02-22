@@ -53,6 +53,5 @@ export function App() {
 }
 
 const PageContent = styled.div`
-  margin-left: 300px;
-  padding-top: 80px;
+  padding: 100px 20px 20px 320px;
 `;
