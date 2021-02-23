@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Table  /> should match snapshot 1`] = `
+<table
+  class="table"
+  role="table"
+>
+  <thead />
+  <tbody
+    role="rowgroup"
+  />
+</table>
+`;

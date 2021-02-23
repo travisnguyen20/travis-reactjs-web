@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuItem  /> should match snapshot 1`] = `
+.c0 {
+  color: #ffffff;
+  opacity: 0.5;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.c0:hover,
+.c0.menu-item--active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 1;
+}
+
+<a
+  aria-current="page"
+  class="c0 py-1 menu-item--active"
+  href="/"
+>
+  Dashboard
+</a>
+`;

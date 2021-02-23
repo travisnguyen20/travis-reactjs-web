@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LeftMenuBar  /> should match snapshot 1`] = `
+.c1 {
+  color: #ffffff;
+  opacity: 0.5;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.c1:hover,
+.c1.menu-item--active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.c0 {
+  width: 300px;
+  background: #000852;
+}
+
+<div
+  class="c0 min-vh-100 position-fixed"
+>
+  <div
+    class="m-5 text-center"
+  >
+    <img
+      alt="logo"
+      class="w-50"
+      src="img.png"
+    />
+  </div>
+  <div
+    class="d-flex flex-column p-5"
+  >
+    <a
+      aria-current="page"
+      class="c1 py-1 menu-item--active"
+      href="/"
+    >
+      Dashboard
+    </a>
+    <a
+      class="c1 py-1"
+      href="/users"
+    >
+      Users
+    </a>
+  </div>
+</div>
+`;

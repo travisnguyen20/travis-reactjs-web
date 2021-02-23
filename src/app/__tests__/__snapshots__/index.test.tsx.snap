@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render and match the snapshot 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "colors": Object {
+        "background": "#F5F6F8",
+        "primaryBlue": "#000852",
+        "white": "#ffffff",
+      },
+      "fontSizes": Object {
+        "body": "1rem",
+        "h1": "3rem",
+        "h2": "2.29rem",
+        "h3": "2rem",
+        "h4": "1.71rem",
+        "h5": "1.43rem",
+        "h6": "1.14rem",
+        "small": "0.86rem",
+      },
+      "fontWeights": Object {
+        "bold": 700,
+        "medium": 500,
+        "regular": 400,
+        "semiBold": 600,
+      },
+      "lineHeights": Object {
+        "body": "1.43rem",
+        "h1": "3.42rem",
+        "h2": "2.86rem",
+        "h3": "2.57rem",
+        "h4": "2.29rem",
+        "h5": "2rem",
+        "h6": "1.71rem",
+        "small": "1.29rem",
+      },
+    }
+  }
+>
+  <BrowserRouter>
+    <Helmet
+      defaultTitle="React Boilerplate"
+      defer={true}
+      encodeSpecialCharacters={true}
+      htmlAttributes={
+        Object {
+          "lang": undefined,
+        }
+      }
+      titleTemplate="%s - React Boilerplate"
+    >
+      <meta
+        content="A React Boilerplate application"
+        name="description"
+      />
+    </Helmet>
+    <LeftMenuBar />
+    <app__PageContent>
+      <Header />
+      <Switch>
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/"
+        />
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/users"
+        />
+        <Route
+          component={[Function]}
+        />
+      </Switch>
+    </app__PageContent>
+    <ToastContainer
+      autoClose={5000}
+      closeButton={[Function]}
+      closeOnClick={true}
+      draggable={true}
+      draggableDirection="x"
+      draggablePercent={80}
+      hideProgressBar={false}
+      newestOnTop={false}
+      pauseOnFocusLoss={true}
+      pauseOnHover={true}
+      position="top-right"
+      role="alert"
+      rtl={false}
+      transition={[Function]}
+    />
+    <Memo(GlobalStyleComponent) />
+  </BrowserRouter>
+</ThemeProvider>
+`;
