@@ -21,8 +21,10 @@ import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 import theme from '../styles/theme';
 import { Header } from './components/Header';
+import { ToastContainer } from 'react-toastify';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -46,6 +48,7 @@ export function App() {
             <Route component={NotFoundPage} />
           </Switch>
         </PageContent>
+        <ToastContainer />
         <GlobalStyle />
       </BrowserRouter>
     </ThemeProvider>

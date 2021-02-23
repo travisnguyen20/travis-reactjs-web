@@ -1,6 +1,7 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
 import { userPageActions as actions } from '.';
-import { UserService } from '../../../../services/user.service';
+import { UserService } from 'services/user.service';
+import { handleError } from 'utils/error';
 
 function* fetchUsers(action) {
   try {
@@ -9,10 +10,11 @@ function* fetchUsers(action) {
       page,
       size,
     });
+
     yield put(actions.fetchUsersSuccess({ users: data.results }));
   } catch (e) {
-    console.log(e);
-    yield put(actions.fetchUsersFail({ error: e }));
+    handleError(e);
+    yield put(actions.fetchUsersFail());
   }
 }
 

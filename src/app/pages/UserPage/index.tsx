@@ -10,10 +10,10 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { selectUsers } from './slice/selectors';
-import { Table } from '../../components/Table';
-import { User } from '../../../types/User';
-import { DEFAULT_PAGE_SIZE } from '../../../constant/paginate';
-import { Pagination } from '../../components/Pagination';
+import { Table } from 'app/components/Table';
+import { User } from 'types/User';
+import { DEFAULT_PAGE_SIZE } from 'constant/paginate';
+import { Pagination } from 'app/components/Pagination';
 import qs from 'qs';
 
 const columns = [

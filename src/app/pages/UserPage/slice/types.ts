@@ -1,7 +1,6 @@
-/* --- STATE --- */
-import { User } from '../../../../types/User';
+import { User } from 'types/User';
 
+/* --- STATE --- */
 export interface UserPageState {
   users: User[];
-  error: Error | null;
 }

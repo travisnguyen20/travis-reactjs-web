@@ -59,6 +59,42 @@ exports[`<Pagination  /> should match snapshot 1`] = `
     class="page-item"
   >
     <a
+      aria-label="Page 4"
+      class="page-link"
+      role="button"
+      tabindex="0"
+    >
+      4
+    </a>
+  </li>
+  <li
+    class="page-item"
+  >
+    <a
+      aria-label="Page 5"
+      class="page-link"
+      role="button"
+      tabindex="0"
+    >
+      5
+    </a>
+  </li>
+  <li
+    class="page-item"
+  >
+    <a
+      aria-label="Page 6"
+      class="page-link"
+      role="button"
+      tabindex="0"
+    >
+      6
+    </a>
+  </li>
+  <li
+    class="page-item"
+  >
+    <a
       class="page-link"
       role="button"
       tabindex="0"
@@ -70,36 +106,12 @@ exports[`<Pagination  /> should match snapshot 1`] = `
     class="page-item"
   >
     <a
-      aria-label="Page 8"
+      aria-label="Page 100"
       class="page-link"
       role="button"
       tabindex="0"
     >
-      8
-    </a>
-  </li>
-  <li
-    class="page-item"
-  >
-    <a
-      aria-label="Page 9"
-      class="page-link"
-      role="button"
-      tabindex="0"
-    >
-      9
-    </a>
-  </li>
-  <li
-    class="page-item"
-  >
-    <a
-      aria-label="Page 10"
-      class="page-link"
-      role="button"
-      tabindex="0"
-    >
-      10
+      100
     </a>
   </li>
   <li

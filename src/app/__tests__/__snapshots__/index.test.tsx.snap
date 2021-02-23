@@ -74,6 +74,22 @@ exports[`<App /> should render and match the snapshot 1`] = `
         />
       </Switch>
     </app__PageContent>
+    <ToastContainer
+      autoClose={5000}
+      closeButton={[Function]}
+      closeOnClick={true}
+      draggable={true}
+      draggableDirection="x"
+      draggablePercent={80}
+      hideProgressBar={false}
+      newestOnTop={false}
+      pauseOnFocusLoss={true}
+      pauseOnHover={true}
+      position="top-right"
+      role="alert"
+      rtl={false}
+      transition={[Function]}
+    />
     <Memo(GlobalStyleComponent) />
   </BrowserRouter>
 </ThemeProvider>

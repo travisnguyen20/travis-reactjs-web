@@ -1,6 +1,13 @@
 import axios, { AxiosInstance, AxiosPromise, AxiosRequestConfig } from 'axios';
 
 import { ApiError, ApiResponse } from 'types/Api';
+import {
+  NETWORK_ERROR,
+  NO_RESPONSE,
+  RUNTIME_ERROR,
+  SERVER_ERROR,
+  UNKNOWN_ERROR,
+} from '../constant/error';
 
 /**
  * Note that this will auto prepend our app's hostname and sets headers automatically
@@ -62,9 +69,9 @@ export class BaseApiService {
       };
     } catch (error) {
       let apiError: ApiError = {
-        name: 'NETWORK_ERROR',
+        name: NETWORK_ERROR,
         originError: null,
-        code: 'UNKNOWN_ERROR',
+        code: UNKNOWN_ERROR,
         message: '',
       };
       apiError.originError = error;
@@ -75,17 +82,17 @@ export class BaseApiService {
         if (data) {
           apiError.message =
             data.error || 'There is something wrong in server!';
-          apiError.code = 'SERVER_ERROR';
+          apiError.code = SERVER_ERROR;
         }
       } else if (error.request) {
         // The request was made but no response was received
         // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
         // http.ClientRequest in node.js
-        apiError.code = 'NO_RESPONSE';
+        apiError.code = NO_RESPONSE;
         apiError.message = 'Unable to connect to server';
       } else {
         // Something happened in setting up the request that triggered an Error
-        apiError.code = 'RUNTIME_ERROR';
+        apiError.code = RUNTIME_ERROR;
         apiError.message = error.message;
       }
       throw apiError;
