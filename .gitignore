@@ -22,3 +22,4 @@ generated-cra-app
 template
 .idea/
 .env
+.env.example
